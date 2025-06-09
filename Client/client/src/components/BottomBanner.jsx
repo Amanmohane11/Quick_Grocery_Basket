@@ -3,7 +3,7 @@ import { assets, features } from '../assets/assets'
 
 const BottomBanner=()=>{
     return (
-        <div className='relative w-full mt-16'>
+        <div className='relative w-full mt-16 p-5'>
             <img src={assets.bottom_banner_image} alt='banner' className='w-full lg:h-110git commit -m "Your commit message here"git pull origin main --rebase
              hidden md:block'/>
             <img src={assets.bottom_banner_image_sm} alt='banner' className='w-full md:hidden'/>
