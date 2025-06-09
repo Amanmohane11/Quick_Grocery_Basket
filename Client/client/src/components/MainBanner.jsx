@@ -8,7 +8,7 @@ const MainBanner = () => {
     <img
       src={assets.main_banner_bg}
       alt="banner"
-      className="w-full p-8 h-110 lg:h-120 hidden md:block"
+      className="w-full p-5 h-110 lg:h-120 hidden md:block"
     />
     <img
       src={assets.main_banner_bg_sm}
