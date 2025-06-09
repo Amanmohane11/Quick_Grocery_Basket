@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets } from '../assets/assets'
+import { assets } from '../assets/assets.js'
 import { NavLink } from 'react-router-dom'
 
 const MainBanner = () => {
@@ -8,7 +8,7 @@ const MainBanner = () => {
     <img
       src={assets.main_banner_bg}
       alt="banner"
-      className="w-full p-8 hidden md:block"
+      className="w-full p-8 h-110 lg:h-120 hidden md:block"
     />
     <img
       src={assets.main_banner_bg_sm}
@@ -17,12 +17,12 @@ const MainBanner = () => {
     />
   
     <div
-      className="absolute inset-0 flex flex-col items-center md:items-start justify-end md:justify-center 
+      className="absolute inset-0 flex flex-col items-center lg:ml-30 md:ml-22 md:items-start justify-end md:justify-center 
                  pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24"
     >
       <h1
-        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left max-w-72 md:max-w-80 
-                   lg:max-w-105 leading-tight lg:leading-[3.75rem]"
+        className="text-3xl md:text-3xl lg:text-5xl font-bold text-center md:text-left max-w-72 md:max-w-80 
+                   lg:max-w-140 leading-tight lg:leading-[3.75rem]"
       >
         Freshness You Can Trust, Savings You Will Love!
       </h1>
