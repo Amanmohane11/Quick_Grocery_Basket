@@ -21,7 +21,8 @@ await connectCloudinary()
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripWebhooks)
 
-const allowedOrigins=['http://localhost:5173']
+const allowedOrigins=[ "http://localhost:5173",
+  "https://quick-grocery-basket.vercel.app"]
 
 // Middlewares configuration
 app.use(express.json());
