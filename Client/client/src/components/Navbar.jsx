@@ -10,9 +10,20 @@ const Navbar = () => {
 
 
 
-  useEffect(()=>{
-    navigate('/products')
-  },[searchQuery])
+ useEffect(() => {
+    setSearchQuery(""); // clear search on first app load
+  }, []);
+
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (searchQuery && window.location.pathname !== '/products') {
+        navigate('/products');
+      }
+    }, 500); // wait 300ms before navigating
+  
+    return () => clearTimeout(timeout);
+  }, [searchQuery]);
 
   
   const logout = async () => {
